@@ -1,0 +1,148 @@
+/* Apply basic styles to the doctor boxes */
+.book-appointment-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Change the button color as desired */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.book-appointment-button:hover {
+    background-color: #0056b3; /* Change the button color on hover */
+}
+
+.doctor-box {
+    border: 1px solid #ccc;
+    padding: 70px;
+    margin: 20px;
+    width: 800px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif; /* Change the font family */
+}
+
+
+
+/* Style the doctor's photo container with a colored circle */
+.photo-container {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color:#ffffff ; /* Change the color as desired */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Style the doctor's photo */
+.photo-container img {
+    width: 100%; /* Make the image fill the circular container */
+    height: auto;
+}
+
+/* Style the doctor's name and details */
+.info-container {
+    flex-grow: 1;
+}
+
+/* Style the doctor's name */
+.info-container h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+/* Style the doctor's details */
+.info-container p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.disease-list-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.scroll-box {
+    max-height: 150px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+ .doctor-container {
+            display: flex;
+            flex-direction: column; /* Change the flex direction to stack elements vertically */
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+            width: 80%; /* Adjust the width as needed */
+            position: relative;
+            overflow: hidden; /* Hide the scrollbars */
+        }
+
+        /* Style the "Book Appointment" button */
+        .book-appointment-button {
+            margin-top: auto; /* Push the button to the bottom */
+            align-self: flex-end; /* Align the button to the right */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Style the scroll box container */
+        .scroll-list-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 200px;
+            max-height: 100%;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Adjust the main content container to avoid overlapping with the fixed scroll list */
+        .main-content {
+            margin-right: 220px; /* Ensure enough space for the scroll list */
+            overflow: hidden; /* Hide the scrollbars on the main content */
+        }

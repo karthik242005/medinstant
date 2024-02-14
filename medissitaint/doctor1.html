@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Information</title>
+    <link rel="stylesheet" href="dt1.css">
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .doctor-list {
+            flex-grow: 1;
+            padding: 10px;
+        }
+
+        .scroll-list {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            list-style-type: none;
+        }
+
+        .scroll-list li {
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .scroll-list li:hover {
+            background-color: lightgray;
+        }
+		.book-appointment-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: auto; 
+            margin-right: 10px; 
+        }
+	    @media (max-width: 768px) {
+    header, nav, main {
+        padding: 10px;
+    }
+	    }
+		
+    </style>
+</head>
+<body>
+
+<div class="background-header">
+    <h1 style="color: rgb(37, 7, 205);">Digital Healthcare Optimization</h1>
+</div>
+<h1 style="color: rgb(6, 160, 207);" >"India's Health Leaders"</h1>
+
+<div class="container">
+    <div class="doctor-list">
+        <div class="doctor-box" data-specialty="Heart Disease">
+            <div class="photo-container">
+                <img src="https://images.clinicspots.com/tr:n-doctor_profile_desktop/kTSLFaKjjmW52MDVO6LdkL8FUU3DMGiJo9RALZsJ.jpeg" alt="Doctor Photo">
+            </div>
+            <div class="info-container">
+                <h2>Dr. S. C Manchanda.</h2>
+                <p>Specialty: Cardiologist</p>
+                <p>Education: MD, University of Medicine</p>
+                <p>Experience: 10+ years</p>
+                <a href="#" class="read-more-button">Read More</a>
+                <div class="additional-info" style="display: none;">
+                    Dr. Manchanda is one of the best cardiologists in Delhi, India with over 5 decades of experience in the area.
+                    <a href="#" class="read-less-button">Read Less</a>
+                </div>
+            </div>
+			<a href="#" class="book-appointment-button" id="bookAppointment" >Book Appointment Now</a>
+        </div>
+        <div class="doctor-box" data-specialty="Cancer">
+            <div class="photo-container">
+                <img src="https://d3b6u46udi9ohd.cloudfront.net/wp-content/uploads/2022/07/28051050/IMG_20220601_163202-1.jpg" alt="Doctor Photo">
+            </div>
+            <div class="info-container">
+                <h2>Aswathi A.T</h2>
+                <p>Specialty: Gynaecology</p>
+                <p>Education: Bachelor of Ayurvedic Medicine and Surgery (BAMS)</p>
+                <p>Experience: 5 years</p>
+                <a href="#" class="read-more-button">Read More</a>
+                <div class="additional-info" style="display: none;">
+                    Paper published in the Journal of Ayurveda and Integrated Medical Sciences – namely Ayurvedic Management of Ardita – A case report. :   Ayurvedic Management of Ardita – A case report.,                    <a href="#" class="read-less-button">Read Less</a>
+                </div>
+            </div>
+			<a href="#" class="book-appointment-button" id="bookAppointment">Book Appointment Now</a>
+        </div>
+        <div class="doctor-box" data-specialty="Cancer">
+            <div class="photo-container">
+                <img src="https://vshospitals.b-cdn.net/wp-content/uploads/2021/01/Prof.-Dr.-S.-Subramanian-vs-hospitals-Sr.-Medical-Oncologist-Chairman-Managing-Director-Cancer-Doctor.webp" alt="Doctor Photo">
+            </div>
+            <div class="info-container">
+                <h2>Prof. Dr. S. Subramanian</h2>
+                <p>Specialty: Oncologist</p>
+                <p>Education: M.B.B.S : Madras Medical College, Chennai – 1964</p></br>
+                   MRCP (UK) : Royal Colleges of Physicians, UK – 1975</p>
+                <p>Experience: 5 years</p>
+                <a href="#" class="read-more-button">Read More</a>
+                <div class="additional-info" style="display: none;">
+                    Prof. Dr. S. Subramanian, who is the top oncologist in India is the Founder and Chairman of the VS Hospitals. He has vast experience of five decades in handling cancer patients. He is well appreciated for his compassion towards his patients besides his trademark in the medical field. <a href="#" class="read-less-button">Read Less</a>
+                </div>
+            </div>
+			<a href="#" class="book-appointment-button" id="bookAppointment">Book Appointment Now</a>
+        </div>
+        <div class="doctor-box" data-specialty="Diabetes">
+            <div class="photo-container">
+                <img src="https://www.narayanahealth.org/sites/default/files/styles/doctors_image_style_200x200_/public/doctor-profile/Dr.%20Hridish%20Narayan%20Chakravarti_0_0.jpg?itok=oXG2sTAa" alt="Doctor Photo">
+            </div>
+            <div class="info-container">
+                <h2>Dr. Hridish Narayan Chakravarti</h2>
+                <p>Specialty: Diabetology, Endocrinology</p>
+                <p>Education: MBBS, MD ( General Medicine), DM ( Endocrinology)</p>
+                <p>Experience: 8 years</p>
+                <a href="#" class="read-more-button">Read More</a>
+                <div class = "additional-info" style="display: none;">
+                <p>Dr. Hridish Narayan Chakravarti is a specialist in Endocrinology and Diabetology. With over 10 years of experience in the medical field, Dr. Chakravarti is deeply involved in academics as well as clinical practice</p>  <a href="#" class="read-less-button">Read Less</a>
+                </div>
+            </div>
+			<a href="#" class="book-appointment-button" id="bookAppointment">Book Appointment Now</a>
+        </div>
+        <div class="doctor-box" data-specialty="Heart Disease">
+            <div class="photo-container">
+                <img src="https://medigence.com/blog/wp-content/uploads/2021/08/Bikram-K-Mohanty.jpg" alt="Doctor Photo">
+            </div>
+            <div class="info-container">
+                <h2>Dr. Bikram K Mohanty</h2>
+                <p>Specialty: Cardiologist</p>
+                <p>Education: MBBSMS (Safdarjung Hospital, Delhi)</br>DNB (National Heart Institute, New Delhi)</p>
+                <p>Experience: 27 years</p>
+                <a href="#" class="read-more-button">Read More</a>
+                <div class="additional-info" style="display: none;">
+                    He is presently working as Director, Cardio Thoracic & Vascular Surgery (Adult & Paediatric), Venkateshwar Hospital, New Delhi.                    <a href="#" class="read-less-button">Read Less</a>
+                </div>
+            </div>
+			<a href="#" class="book-appointment-button">Book Appointment Now</a>
+        </div>
+        <div class="doctor-box" data-specialty="Eye">         
+            <div class="photo-container">
+                <img src="https://lyfboat-os.s3.fr-par.scw.cloud/uploads/doctors/741-profile-dr.-varun-gogia.jpg" alt="Doctor Photo">
+            </div>
+            <div class="info-container">
+                <h2>Dr. Varun Gogia</h2>
+                <p>Specialty: Ophthalmologist</p>
+                <p>Education: MBBS (AIIMS), MD (AIIMS), Vitreoretina, Uvea & Cataract Specialist</p>
+                <p>Experience: 32 years</p>
+                <a href="#" class="read-more-button">Read More</a>
+                <div class="additional-info" style="display: none;">
+                    Dr. Varun Gogia is highly renowned Ophthalmologist in New Delhi who works at IClinix Advanced Eye Care, a premier eye care clinic.         <a href="#" class="read-less-button">Read Less</a>
+                </div>
+            </div>
+			<a href="#" class="book-appointment-button" id="bookAppointment">Book Appointment Now</a>
+        </div>
+        
+        
+    
+        <div class="doctor-box" data-specialty="Skin Disease">         
+            <div class="photo-container">
+                <img src="https://www.vaidam.com/sites/default/files/dr-ravichandran-g-dermatologist.jpg" alt="Doctor Photo">
+            </div>
+            <div class="info-container">
+                <h2>Dr. Ravichandran G</h2>
+                <p>Specialty: Dermatologist</p>
+                <p>Education: MD, Diploma, MBBS,</br>Chennai, India</p>
+                <p>Experience: 32 years</p>
+                <a href="#" class="read-more-button">Read More</a>
+                <div class="additional-info" style="display: none;">
+                    He is a member of IADVL, Association of Cutaneous Surgeons India, Indian Medical Association and Indian Association of Dermatologists.        <a href="#" class="read-less-button">Read Less</a>
+                </div>
+            </div>
+			<a href="#" class="book-appointment-button" id="bookAppointment">Book Appointment Now</a>
+        </div>
+        
+    </div>
+    <ul class="scroll-list">
+        <li>Heart Disease</li>
+        <li>Cancer</li>
+        <li>Diabetes</li>
+        <li>Skin Disease</li>
+        <li>Eye</li>
+        <li>Lungs</li>
+        <li>Brain</li>
+        <li>Legs</li>
+        <li>Throat</li>
+        <li>Pregnency</li>
+        <li>Bone Fracture</li>
+        <li>Kidney</li>
+        <li>Mental illness</li>
+        
+    </ul>
+</div>
+<script>
+    
+const readMoreButtons = document.querySelectorAll('.read-more-button');
+const readLessButtons = document.querySelectorAll('.read-less-button');
+
+readMoreButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        const additionalInfo = event.target.nextElementSibling; 
+        additionalInfo.style.display = 'block'; 
+        event.target.style.display = 'none'; 
+    });
+});
+
+readLessButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        const additionalInfo = event.target.parentElement; 
+        additionalInfo.style.display = 'none'; 
+        const readMoreButton = additionalInfo.previousElementSibling; 
+        readMoreButton.style.display = 'inline'; 
+    });
+});
+
+    const scrollList = document.querySelector('.scroll-list');
+
+    scrollList.addEventListener('click', (event) => {
+        if (event.target.tagName === 'LI') {
+            event.target.style.backgroundColor = 'blue';
+
+            event.target.style.color = 'white';
+
+            const listItems = scrollList.getElementsByTagName('li');
+            for (const listItem of listItems) {
+                if (listItem !== event.target) {
+                    listItem.style.backgroundColor = '';
+                    listItem.style.color = ''; 
+                }
+            }
+        }
+    });
+const doctorBoxes = document.querySelectorAll('.doctor-box');
+
+scrollList.addEventListener('click', (event) => {
+    if (event.target.tagName === 'LI') {
+        const selectedItem = event.target.textContent.toLowerCase();
+
+        doctorBoxes.forEach((box) => {
+            box.style.display = 'none';
+        });
+
+        doctorBoxes.forEach((box) => {
+            const specialty = box.getAttribute('data-specialty').toLowerCase();
+            if (specialty === selectedItem) {
+                box.style.display = 'block';
+            }
+        });
+
+        if (selectedItem === 'Heart Disease') {
+            const firstDoctorBox = document.querySelector('.doctor-box[data-specialty="Heart Disease"]');
+            if (firstDoctorBox) {
+                firstDoctorBox.style.display = 'block';
+            }
+        }
+        if (selectedItem === 'Cancer') {
+            const cancerDoctorBox = document.querySelector('.doctor-box[data-specialty="Cancer"]');
+            if (cancerDoctorBox) {
+                cancerDoctorBox.style.display = 'block';
+            }
+        }
+        if (selectedItem === 'Diabetes') {
+            const diabetesDoctorBox = document.querySelector('.doctor-box[data-specialty="Diabetes"]');
+            if (diabetesDoctorBox) {
+                diabetesDoctorBox.style.display = 'block';
+            }
+        }
+        if (selectedItem === 'Skin Disease') {
+            const skindiseaseDoctorBox = document.querySelector('.doctor-box[data-specialty="Skin Disease"]');
+            if (skindiseaseDoctorBox) {
+                skindiseaseDoctorBox.style.display = 'block';
+            }
+        }
+        if (selectedItem === 'Eye') {
+            const Eye = document.querySelector('.doctor-box[data-specialty="Eye"]');
+            if (Eye) {
+                Eye.style.display = 'block';
+            }
+        }
+    }
+});
+
+</script>
+<script>
+    const bookAppointmentButton = document.getElementById('bookAppointment');
+
+    bookAppointmentButton.addEventListener('click', function() {
+        const appointmentPageUrl = 'ganesh1.html';
+
+        window.open(appointmentPageUrl, '_blank');
+    });
+</script>
+
+
+</script>
+
+
+</body>
+</html>
